@@ -1,6 +1,9 @@
 # rtp-scanner
 Tool to capture and parse RTP headers in UDP packets received at specified IP and port
 
+## Purpose
+Tool can be used to diagnose the RTP header fields of packets being received on any interface
+
 ## Compilation (Linux)
 
 ``` bash
@@ -23,6 +26,10 @@ RTP Packet size 1200, Headers: version: 2, padding 0, extns 0, csrcs 0, marker 0
 RTP Packet size 1200, Headers: version: 2, padding 0, extns 0, csrcs 0, marker 0, payload type 96, seqnum 1217, rtp ts 2250407910, ssrc 3617579591   
 RTP Packet size 1200, Headers: version: 2, padding 0, extns 0, csrcs 0, marker 0, payload type 96, seqnum 1218, rtp ts 2250407910, ssrc 3617579591   
 RTP Packet size 428, Headers: version: 2, padding 0, extns 0, csrcs 0, marker 1, payload type 96, seqnum 1219, rtp ts 2250407910, ssrc 3617579591   
+
+## Limitations
+
+Tool  will not work if another process has bound itself to the specified IP and port.
 
 ## References
 
