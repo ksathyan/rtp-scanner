@@ -12,7 +12,7 @@ gcc -o rtp-scanner rtp-scanner.c
 
 ## Usage
 ``` bash
-./rtp-scanner -a <IP address> -p <port>
+./rtp-scanner [-a <IP address>] -p <port>
 ```
 IP address (optional) - IP address to capture UDP packets
 
